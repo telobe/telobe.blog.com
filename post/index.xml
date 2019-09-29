@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on My New Hugo Site</title>
+    <link>https://telobe.blog.com/post/</link>
+    <description>Recent content in Posts on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 29 Sep 2019 12:08:54 +0800</lastBuildDate>
+    
+	<atom:link href="https://telobe.blog.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>黄健健的测试博客</title>
+      <link>https://telobe.blog.com/post/test/</link>
+      <pubDate>Sun, 29 Sep 2019 12:08:54 +0800</pubDate>
+      
+      <guid>https://telobe.blog.com/post/test/</guid>
+      <description>一、hugo下载地址：https://github.com/gohugoio/hugo/releases 1、选择对应的最新zip包，我下载的是hugo_0.57.2_Windows-64bit.zip (ps.下面的extended包不用下载)，下载完成后，解压待用。
+2、创建文件夹。此处举例：F盘创建 hugo/bin，将解压后的hugo.exe放到bin目录下。
+3、配置系统环境变量。将F:\hugo\bin加到path变量中，注意两点: (1) 是path，不是CLASSPATH，要区分下 (2) 路径后面记得加英文分号 ;
+以上设置好后，就可以在cmd中查看是否安装成功。执行命令：
+$ hugo version
+Hugo Static Site Generator v0.57.2-A849CB2D windows/amd64 BuildDate: 2019-08-17T17:54:13Z　显示该条即表示成功
+二、生成站点 进入F:\hugo下，打开命令窗口。(可用cmd，也可选择下载安装Git，推荐安装git，敲命令很方便)
+$ hugo new site 文件名称 (如blog)
+执行后，在hugo目录下就会生成一个 名叫blog的站点文件夹
+进入blog，显示以下目录结构：
+archetypes　(存放default.md，头文件格式，每次新建文章默认显示的头部信息在此修改)
+content (存放博客文章，markdown格式文件)
+data (存放自定义或者导入的模板)
+layouts (存放网站的数据模板)
+static (存放图片、css、js等静态资源)
+themes (存放主题文件，每个主题都是一个独立的文件夹)
+config.toml (网站配置文件)
+三、创建文章 进入站点根目录blog下，执行命令：
+$ hugo new post/test.md
+执行后，会自动在content/post下生成 test.md文件，打开可编辑内容，ps.文件头部的draft要改为false，这样部署后才能看到文章。
+当前网站是没有任何内容的，需要下载个主题。
+四、下载主题 进入站点的themes目录
+$ cd themes
+$ git clone https://github.com/spf13/hyde.git
+(ps.可去https://themes.gohugo.io官网选择其他主题下载)
+这样themes下就多了一个文件夹，文件夹名即为主题名称。此时可回到站点目录下打开config.toml配置指定主题。如theme = &amp;ldquo;hyde&amp;rdquo; 没有theme参数就自己写上</description>
+    </item>
+    
+  </channel>
+</rss>
